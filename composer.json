@@ -1,0 +1,22 @@
+{
+	"name": "compono-kit/types-interfaces",
+	"description": "Interfaces of objects of different wrappers of scalar types",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Benjamin Bruska",
+			"email": "benjamin.bruska@your-coder.de"
+		}
+	],
+	"require": {
+		"php": ">=8.0",
+		"ext-json": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"ComponoKit\\Types\\Interfaces\\": "src/"
+		}
+	}
+}
