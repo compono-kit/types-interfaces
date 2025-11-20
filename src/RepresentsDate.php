@@ -22,7 +22,7 @@ interface RepresentsDate extends RepresentsType, \Stringable
 
 	public function isLessThanOrEqual( RepresentsDate|\DateTimeInterface|string $value ): bool;
 
-	public function hasExpired( null|RepresentsDate|\DateTimeInterface $now = null, ?\DateInterval $expirationInterval = null ): bool;
+	public function hasExpired( ?\DateInterval $expirationInterval = null, null|RepresentsDate|\DateTimeInterface $now = null ): bool;
 
 	public function format( string $format ): string;
 
