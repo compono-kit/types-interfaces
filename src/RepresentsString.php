@@ -8,6 +8,12 @@ interface RepresentsString extends RepresentsType, \Stringable
 
 	public function toString(): string;
 
+	public function isEmpty(): bool;
+
+	public function getLength(): int;
+
+	public function countChars(): int;
+
 	public function trim( string $characters = " \n\r\t\v\x00" ): static;
 
 	public function replace( array|string|\Stringable $search, array|string|\Stringable $replace ): static;
@@ -37,10 +43,6 @@ interface RepresentsString extends RepresentsType, \Stringable
 	public function splitNative( string $delimiter ): array;
 
 	public function matchRegularExpression( string|\Stringable $pattern, &$matches, int $flags, int $offset ): bool;
-
-	public function getLength(): int;
-
-	public function isEmpty(): bool;
 
 	public function contains( string|\Stringable $needle ): bool;
 

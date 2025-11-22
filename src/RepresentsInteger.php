@@ -6,9 +6,9 @@ interface RepresentsInteger extends RepresentsType, \Stringable
 {
 	public function toInteger(): int;
 
-	public function toString(): string;
-
 	public function toFloat(): float;
+
+	public function toString(): string;
 
 	public function isGreaterThan( RepresentsInteger|int $value ): bool;
 

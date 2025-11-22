@@ -6,11 +6,13 @@ interface RepresentsDate extends RepresentsType, \Stringable
 {
 	public function equalsValue( RepresentsDate $value ): bool;
 
+	public function toString(): string;
+
 	public function toDateTime(): \DateTimeInterface;
 
-	public function sub( \DateInterval $dateInterval ): static;
-
 	public function add( \DateInterval $dateInterval ): static;
+
+	public function sub( \DateInterval $dateInterval ): static;
 
 	public function diff( RepresentsDate $anotherDateTime, bool $absolute ): \DateInterval;
 
@@ -22,7 +24,7 @@ interface RepresentsDate extends RepresentsType, \Stringable
 
 	public function isLessThanOrEqual( RepresentsDate|\DateTimeInterface|string $value ): bool;
 
-	public function hasExpired( ?\DateInterval $expirationInterval = null, null|RepresentsDate|\DateTimeInterface $now = null ): bool;
+	public function hasExpired( ?\DateInterval $expirationInterval = null, null|RepresentsDate|\DateTimeInterface $referenceTime = null ): bool;
 
 	public function format( string $format ): string;
 
