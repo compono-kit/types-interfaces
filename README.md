@@ -8,5 +8,3 @@ The interfaces contain some very useful helper methods.
 ## Requirements
 
 * PHP 8+
-* compono-kit/types-interfaces
-
