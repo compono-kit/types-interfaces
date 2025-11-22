@@ -10,7 +10,7 @@ interface RepresentsString extends RepresentsType, \Stringable
 
 	public function isEmpty(): bool;
 
-	public function getLength(): int;
+	public function getByteLength(): int;
 
 	public function countChars(): int;
 
