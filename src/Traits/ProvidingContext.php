@@ -6,7 +6,7 @@ trait ProvidingContext
 {
 	private array $context = [];
 
-	public function setContext( array $context ): self
+	public function setContext( array $context ): static
 	{
 		$this->context = $context;
 

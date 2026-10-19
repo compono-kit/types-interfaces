@@ -42,7 +42,7 @@ interface RepresentsString extends RepresentsType, \Stringable
 	 */
 	public function splitNative( string $delimiter ): array;
 
-	public function matchRegularExpression( string|\Stringable $pattern, &$matches, int $flags, int $offset ): bool;
+	public function matchRegularExpression( string|\Stringable $pattern, ?array &$matches, int $flags, int $offset ): bool;
 
 	public function contains( string|\Stringable $needle ): bool;
 

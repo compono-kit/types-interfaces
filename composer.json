@@ -3,7 +3,7 @@
 	"description": "Interfaces of objects of different wrappers of scalar types",
 	"minimum-stability": "dev",
 	"prefer-stable": true,
-	"license": "proprietary",
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Benjamin Bruska",
@@ -11,8 +11,7 @@
 		}
 	],
 	"require": {
-		"php": ">=8.0",
-		"ext-json": "*"
+		"php": ">=8.5"
 	},
 	"autoload": {
 		"psr-4": {

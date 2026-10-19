@@ -14,7 +14,7 @@ interface RepresentsDate extends RepresentsType, \Stringable
 
 	public function sub( \DateInterval $dateInterval ): static;
 
-	public function diff( RepresentsDate $anotherDateTime, bool $absolute ): \DateInterval;
+	public function diff( RepresentsDate $anotherDate, bool $absolute = false ): \DateInterval;
 
 	public function isLessThan( RepresentsDate|\DateTimeInterface|string $value ): bool;
 
